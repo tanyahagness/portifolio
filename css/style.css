@@ -1,0 +1,659 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.pc-nav {
+  display: none;
+}
+
+.banner {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  background-color: rgb(13, 13, 43);
+  color: white;
+}
+.banner .container .row .left h1 {
+  margin-top: 3rem;
+  font-size: 3rem;
+  color: white;
+}
+.banner .container .row .left .btn {
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+}
+.banner .container .row .left span {
+  color: white;
+}
+.banner .container .row .right img {
+  padding-top: 7px;
+  height: 25rem;
+  border-radius: 0%;
+}
+
+.About {
+  background-color: #0d0d2d;
+  padding: 3rem 0;
+}
+.About .container .row .left h1 {
+  text-decoration: underline;
+  color: rgb(63, 63, 120);
+}
+.About .container .row .left p {
+  color: white;
+  text-align: center;
+}
+.About .container .row .left h3 {
+  color: rgb(63, 63, 120);
+  margin-top: 2rem;
+  text-decoration: underline;
+}
+.About .container .row .left img {
+  height: 30%;
+  width: 40%;
+  margin-top: 2rem;
+}
+.About .container .row .left .text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.About .container .row .left .buttons {
+  background-color: white;
+  color: black;
+}
+.About .container .row .right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0rem;
+}
+.About .container .row .right h1 {
+  color: rgb(63, 63, 120);
+  text-decoration: underline;
+  align-items: end;
+  justify-content: end;
+  margin-top: 4rem;
+}
+.About .container .row .right img {
+  margin-top: 3rem;
+  height: 15rem;
+  width: 15rem;
+}
+.About .container .row .right button {
+  background-color: wheat;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.Services {
+  background-color: rgb(13, 13, 45);
+  padding: 3rem 0;
+}
+.Services .container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.Services .container h3 {
+  color: white;
+  text-decoration: underline;
+}
+.Services .container .three1 {
+  display: block;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+.Services .container .three1 p {
+  color: white;
+  font-weight: 900;
+  text-align: start;
+}
+.Services .container .three1 .images1 {
+  background: dimgray;
+  background-image: url(../imgs/laptop-screen-mockup_550856-540.jpg);
+  background-blend-mode: multiply;
+  height: 35vh;
+  width: 35vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid black;
+  display: flex;
+  align-items: end;
+  border-radius: 10%;
+}
+.Services .container .three1 .images2 {
+  background: dimgray;
+  background-image: url(../imgs/GLOB\ -\ Copy.avif);
+  background-blend-mode: multiply;
+  height: 35vh;
+  width: 35vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid black;
+  display: flex;
+  align-items: end;
+  border-radius: 10%;
+}
+.Services .container .three1 .images3 {
+  background: dimgray;
+  background-image: url(../imgs/visual.jpg);
+  background-blend-mode: multiply;
+  height: 35vh;
+  width: 35vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid black;
+  display: flex;
+  align-items: end;
+  border-radius: 10%;
+}
+.Services .container .three2 {
+  display: none;
+}
+
+#work {
+  background-color: rgb(13, 13, 43);
+  width: 100%;
+  padding: 3rem 0;
+}
+#work .container .row .left {
+  height: 65vh;
+}
+#work .container .row .left img {
+  background: dimgray;
+  background-blend-mode: multiply;
+  width: 100%;
+}
+#work .container .row .left .cards-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: -1rem;
+}
+#work .container .row .left .cards-section .card {
+  width: 60%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  background: rgb(63, 63, 120);
+  justify-content: center;
+  color: white;
+  border: 2px solid white;
+}
+#work .container .why-section {
+  display: flex;
+}
+#work .container .right {
+  margin-top: -20rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: -5rem;
+}
+#work .container .right h2 {
+  text-decoration: underline;
+  color: rgb(63, 63, 120);
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+#work .container .right .text {
+  font-weight: 500;
+  color: white;
+}
+#work .container .right .text span {
+  color: rgb(131, 66, 66);
+}
+#work .container .right p {
+  color: white;
+}
+#work .container .right .button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 20px;
+  border-radius: 0;
+  border: 3px solid black a;
+  border-color: rgb(164, 15, 30);
+  border-font-weight: 600;
+  border-text-decoration: none;
+}
+
+.footer {
+  padding: 1rem 0;
+  background-color: rgb(13, 13, 43);
+  display: block;
+  gap: 2em;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+}
+.footer h3 {
+  color: rgb(63, 63, 120);
+  text-decoration: underline;
+}
+.footer p {
+  color: white;
+}
+
+.web img {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  border: 5px solid transparent;
+  outline: 2px solid white;
+  border-radius: 50%;
+}
+
+.strong {
+  color: #1927c3;
+  font-weight: 100;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .pc-nav {
+    display: block;
+    background-color: transparent;
+    color: white;
+    border-bottom: 2px solid white;
+    left: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .pc-nav img {
+    width: 40vh;
+    height: 20vh;
+    height: 3rem;
+    justify-content: left;
+    margin-right: 5rem;
+  }
+  .pc-nav ul {
+    color: rgb(63, 63, 120);
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 4% 0 0;
+  }
+  .banner {
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    background-color: rgb(13, 13, 43);
+    color: white;
+  }
+  .banner .container .row .left h1 {
+    margin-top: 3rem;
+    font-size: 3rem;
+    color: white;
+  }
+  .banner .container .row .left .btn {
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+  }
+  .banner .container .row .left span {
+    color: white;
+  }
+  .banner .container .row .right img {
+    height: 25rem;
+    border-radius: 10%;
+  }
+  .About {
+    background-color: #0d0d2d;
+    padding: 3rem 0;
+  }
+  .About .container .row .left h1 {
+    text-decoration: underline;
+    color: rgb(63, 63, 120);
+  }
+  .About .container .row .left p {
+    color: white;
+    text-align: center;
+  }
+  .About .container .row .left h3 {
+    color: rgb(63, 63, 120);
+    margin-top: 2rem;
+    text-decoration: underline;
+  }
+  .About .container .row .left img {
+    height: 30%;
+    width: 40%;
+    margin-top: 2rem;
+  }
+  .About .container .row .left .text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .About .container .row .left .buttons {
+    background-color: white;
+    color: black;
+  }
+  .About .container .row .right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .About .container .row .right h1 {
+    color: rgb(63, 63, 120);
+    text-decoration: underline;
+    align-items: end;
+    justify-content: end;
+    margin-top: 0rem;
+  }
+  .About .container .row .right img {
+    margin-top: 3rem;
+    height: 15rem;
+    width: 15rem;
+  }
+  .About .container .row .right button {
+    background-color: wheat;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    margin-top: 0rem;
+  }
+  .Services {
+    background-color: rgb(13, 13, 45);
+    padding: 3rem 0;
+  }
+  .Services .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Services .container h3 {
+    color: white;
+    text-decoration: underline;
+  }
+  .Services .container .three1 {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+  .Services .container .three1 p {
+    color: white;
+    font-weight: 900;
+    text-align: start;
+  }
+  .Services .container .three1 .images1 {
+    background: dimgray;
+    background-image: url(../imgs/laptop-screen-mockup_550856-540.jpg);
+    background-blend-mode: multiply;
+    height: 35vh;
+    width: 35vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    display: flex;
+    align-items: end;
+    border-radius: 10%;
+  }
+  .Services .container .three1 .images2 {
+    background: dimgray;
+    background-image: url(../imgs/GLOB\ -\ Copy.avif);
+    background-blend-mode: multiply;
+    height: 35vh;
+    width: 35vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    display: flex;
+    align-items: end;
+    border-radius: 10%;
+  }
+  .Services .container .three1 .images3 {
+    background: dimgray;
+    background-image: url(../imgs/visual.jpg);
+    background-blend-mode: multiply;
+    height: 35vh;
+    width: 35vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    display: flex;
+    align-items: end;
+    border-radius: 10%;
+  }
+  .Services .container .three2 {
+    display: flex;
+    gap: 3rem;
+  }
+  .Services .container .three2 p {
+    color: white;
+    font-weight: 900;
+  }
+  .Services .container .three2 .images4 {
+    background: dimgray;
+    background-image: url(../imgs/watch\ -\ Copy.jfif);
+    background-blend-mode: multiply;
+    height: 35vh;
+    width: 35vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    display: flex;
+    align-items: end;
+    border-radius: 10%;
+  }
+  .Services .container .three2 .images5 {
+    background: dimgray;
+    background-image: url(../imgs/product\ -\ Copy\ \(2\).jfif);
+    background-blend-mode: multiply;
+    height: 35vh;
+    width: 35vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    display: flex;
+    align-items: end;
+    border-radius: 10%;
+  }
+  .Services .container .three2 .images6 {
+    background: dimgray;
+    background-image: url("/imgs/scratch");
+    background-blend-mode: multiply;
+    height: 35vh;
+    width: 35vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    display: flex;
+    align-items: end;
+    border-radius: 10%;
+  }
+  #work {
+    background-color: rgb(13, 13, 43);
+    width: 100%;
+    padding: 3rem 0;
+  }
+  #work .container .row .left {
+    height: 100vh;
+  }
+  #work .container .row .left img {
+    background: dimgray;
+    background-blend-mode: multiply;
+    width: 100%;
+  }
+  #work .container .row .left .cards-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -1rem;
+  }
+  #work .container .row .left .cards-section .card {
+    width: 60%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    background: rgb(63, 63, 120);
+    justify-content: center;
+    color: white;
+    border: 2px solid white;
+  }
+  #work .container .why-section {
+    display: flex;
+  }
+  #work .container .right {
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: -5rem;
+  }
+  #work .container .right h2 {
+    text-decoration: underline;
+    color: rgb(63, 63, 120);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  #work .container .right .text {
+    font-weight: 500;
+    color: white;
+  }
+  #work .container .right .text span {
+    color: rgb(131, 66, 66);
+  }
+  #work .container .right p {
+    color: white;
+  }
+  #work .container .right .button {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 5px 20px;
+    border-radius: 0;
+    border: 3px solid black a;
+    border-color: rgb(164, 15, 30);
+    border-font-weight: 600;
+    border-text-decoration: none;
+  }
+  .footer {
+    padding: 1rem 0;
+    background-color: rgb(13, 13, 43);
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+  }
+  .footer h3 {
+    color: rgb(63, 63, 120);
+    text-decoration: underline;
+  }
+  .footer p {
+    color: white;
+  }
+  .web img {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: 5px solid transparent;
+    outline: 2px solid white;
+    border-radius: 50%;
+  }
+  .strong {
+    color: #1927c3;
+    font-weight: 100;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
